@@ -159,13 +159,13 @@
                     <label class="form-label" data-lang="en" class="active-lang">Category</label>
                     <label class="form-label" data-lang="ru">Категория</label>
                     <select class="form-control category-select" id="category" required>
-                        <option value="">Select Category / Выберите категорию</option>
-                        <option value="sleep">Baby's Sleep / Сон ребёнка</option>
-                        <option value="feeding">Breastfeeding / Грудное вскармливание</option>
-                        <option value="wellness">Mental Wellness / Психическое здоровье</option>
-                        <option value="support">Community Support / Поддержка сообщества</option>
-                        <option value="postpartum">Postpartum Care / Послеродовой уход</option>
-                        <option value="safety">Safety Tips / Советы по безопасности</option>
+                        <option value="" data-text-en="Select Category" data-text-ru="Выберите категорию">Select Category</option>
+                        <option value="sleep" data-text-en="Baby's Sleep" data-text-ru="Сон ребёнка">Baby's Sleep</option>
+                        <option value="feeding" data-text-en="Breastfeeding" data-text-ru="Грудное вскармливание">Breastfeeding</option>
+                        <option value="wellness" data-text-en="Mental Wellness" data-text-ru="Психическое здоровье">Mental Wellness</option>
+                        <option value="support" data-text-en="Community Support" data-text-ru="Поддержка сообщества">Community Support</option>
+                        <option value="postpartum" data-text-en="Postpartum Care" data-text-ru="Послеродовой уход">Postpartum Care</option>
+                        <option value="safety" data-text-en="Safety Tips" data-text-ru="Советы по безопасности">Safety Tips</option>
                     </select>
                 </div>
                 <div class="form-group">
@@ -461,6 +461,19 @@
                 if (subscribeEmail) subscribeEmail.placeholder = 'Your Email';
                 if (questionTextarea) questionTextarea.placeholder = 'Type your question here...';
             }
+
+            // Update dropdown options based on language
+            const categorySelect = document.getElementById('category');
+            if (categorySelect) {
+                const options = categorySelect.querySelectorAll('option');
+                options.forEach(option => {
+                    const textEn = option.getAttribute('data-text-en');
+                    const textRu = option.getAttribute('data-text-ru');
+                    if (textEn && textRu) {
+                        option.textContent = lang === 'ru' ? textRu : textEn;
+                    }
+                });
+            }
         }
 
         // Add click listeners to language buttons
@@ -473,6 +486,9 @@
         // Load saved language preference
         const savedLang = localStorage.getItem('preferredLanguage') || 'en';
         switchLanguage(savedLang);
+
+        // Initialize dropdown with correct language
+        updateFormPlaceholders(savedLang);
 
         // Smooth scrolling
         function scrollToSection(sectionId) {
