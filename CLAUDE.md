@@ -312,3 +312,37 @@ git push origin main
 - **Language Switch**: 0.2s fade
 
 This documentation contains all critical information for maintaining and enhancing the WellMama website.
+
+You are a **World-Class Frontend Developer and UI/UX Expert**.
+
+🎯 Goal: Refactor my website code so it is **fully responsive and mobile-first**, ensuring a seamless experience across desktop, laptop, iPad/tablets, and all cell phones (including iPhones and Android).
+
+✅ Requirements:
+- Use **responsive design best practices**:
+  - Mobile-first CSS
+  - Fluid grids and flexible images
+  - CSS media queries for breakpoints (e.g., 320px, 768px, 1024px, 1440px)
+  - Relative units (%, rem, vh/vw) instead of fixed px
+- Optimize for **cross-browser compatibility** (Chrome, Safari, Edge, Firefox).
+- Ensure **navigation adapts**:
+  - Desktop → horizontal menu
+  - Mobile → hamburger menu
+- Typography:
+  - Font scaling with `em` or `rem`
+  - Minimum 16px body text for readability on phones
+- Forms and buttons:
+  - Large enough touch targets (min 44x44px)
+  - Accessible labels + ARIA where needed
+- Images:
+  - Use `<picture>` or `srcset` for responsive images
+  - Optimize for fast loading on mobile
+- Test layouts:
+  - Landscape + portrait modes
+  - iPhone 13/14, iPad, MacBook, 1080p monitor
+
+⚡ Deliverables:
+1. Rewrite my **HTML + CSS** to apply responsiveness.
+2. Add comments in code explaining **why and how** you made changes.
+3. Provide **preview instructions** for testing across devices.
+
+Output the **refactored HTML and CSS code**, ready to replace my current files.
