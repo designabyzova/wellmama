@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WellMama - Premium maternal care platform. Expert guidance, exclusive resources, and elite community for modern mothers.">
+    <title>WellMama - Premium Maternal Wellness Platform</title>
+
+    <!-- Premium Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=Inter:wght@300;400;500;600;700&family=DM+Serif+Display&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="wellmama-premium.css">
+</head>
+<body>
+    <!-- Premium Announcement Bar -->
+    <div class="announcement-bar">
+        <div class="announcement-content">
+            <span class="announcement-badge">NEW</span>
+            <p class="lang-en">Join 2,500+ mothers in our exclusive community • Expert response in under 6 hours</p>
+            <p class="lang-ru hidden">Присоединяйтесь к 2,500+ мам в эксклюзивном сообществе • Ответ эксперта менее чем за 6 часов</p>
+        </div>
+    </div>
+
+    <!-- Premium Navigation -->
+    <nav class="premium-nav">
+        <div class="nav-container">
+            <div class="nav-wrapper">
+                <a href="#" class="premium-logo">
+                    <div class="logo-symbol">
+                        <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="20" cy="15" r="10" fill="url(#gradient1)"/>
+                            <path d="M10 22 Q10 32, 20 32 Q30 32, 30 22" stroke="url(#gradient1)" stroke-width="2" fill="none"/>
+                            <defs>
+                                <linearGradient id="gradient1" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#9333EA"/>
+                                    <stop offset="100%" style="stop-color:#EC4899"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                    <div class="logo-text">
+                        <span class="logo-main">WellMama</span>
+                        <span class="logo-tagline">Premium Care</span>
+                    </div>
+                </a>
+
+                <nav class="main-navigation">
+                    <a href="#home" class="nav-item active">
+                        <span class="lang-en">Home</span>
+                        <span class="lang-ru hidden">Главная</span>
+                    </a>
+                    <a href="#expertise" class="nav-item">
+                        <span class="lang-en">Expertise</span>
+                        <span class="lang-ru hidden">Экспертиза</span>
+                    </a>
+                    <a href="#resources" class="nav-item">
+                        <span class="lang-en">Resources</span>
+                        <span class="lang-ru hidden">Ресурсы</span>
+                    </a>
+                    <a href="#community" class="nav-item">
+                        <span class="lang-en">Community</span>
+                        <span class="lang-ru hidden">Сообщество</span>
+                    </a>
+                    <a href="#consultation" class="nav-item">
+                        <span class="lang-en">Consultation</span>
+                        <span class="lang-ru hidden">Консультация</span>
+                    </a>
+                </nav>
+
+                <div class="nav-actions">
+                    <button class="language-switcher" onclick="toggleLanguage()">
+                        <span class="lang-indicator active">EN</span>
+                        <span class="lang-divider">/</span>
+                        <span class="lang-indicator">RU</span>
+                    </button>
+                    <a href="#consultation" class="premium-cta">
+                        <span class="lang-en">Get Started</span>
+                        <span class="lang-ru hidden">Начать</span>
+                        <span class="cta-arrow">→</span>
+                    </a>
+                    <button class="menu-trigger" onclick="toggleMenu()">
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Premium Hero Section -->
+    <section id="home" class="premium-hero">
+        <div class="hero-background">
+            <div class="gradient-sphere sphere-1"></div>
+            <div class="gradient-sphere sphere-2"></div>
+            <div class="gradient-sphere sphere-3"></div>
+        </div>
+
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <div class="hero-label">
+                        <span class="lang-en">Trusted by 2,500+ Mothers Worldwide</span>
+                        <span class="lang-ru hidden">Доверяют 2,500+ мам по всему миру</span>
+                    </div>
+
+                    <h1 class="hero-headline">
+                        <span class="lang-en">
+                            <span class="gradient-text">Premium Care</span>
+                            <br>for Modern Motherhood
+                        </span>
+                        <span class="lang-ru hidden">
+                            <span class="gradient-text">Премиальная забота</span>
+                            <br>для современного материнства
+                        </span>
+                    </h1>
+
+                    <p class="hero-description">
+                        <span class="lang-en">Expert guidance, evidence-based resources, and an exclusive community designed to support you through every moment of early motherhood.</span>
+                        <span class="lang-ru hidden">Экспертное руководство, научно обоснованные ресурсы и эксклюзивное сообщество для поддержки на каждом этапе раннего материнства.</span>
+                    </p>
+
+                    <div class="hero-actions">
+                        <a href="#consultation" class="btn-premium-primary">
+                            <span class="lang-en">Start Your Journey</span>
+                            <span class="lang-ru hidden">Начните ваш путь</span>
+                        </a>
+                        <a href="#expertise" class="btn-premium-secondary">
+                            <span class="lang-en">Meet Our Experts</span>
+                            <span class="lang-ru hidden">Наши эксперты</span>
+                        </a>
+                    </div>
+
+                    <div class="trust-indicators">
+                        <div class="indicator">
+                            <span class="indicator-value">24/7</span>
+                            <span class="indicator-label">
+                                <span class="lang-en">Support</span>
+                                <span class="lang-ru hidden">Поддержка</span>
+                            </span>
+                        </div>
+                        <div class="indicator">
+                            <span class="indicator-value">15+</span>
+                            <span class="indicator-label">
+                                <span class="lang-en">Experts</span>
+                                <span class="lang-ru hidden">Экспертов</span>
+                            </span>
+                        </div>
+                        <div class="indicator">
+                            <span class="indicator-value">98%</span>
+                            <span class="indicator-label">
+                                <span class="lang-en">Satisfaction</span>
+                                <span class="lang-ru hidden">Довольны</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-visual">
+                    <div class="premium-image-container">
+                        <div class="image-glow"></div>
+                        <img src="https://images.unsplash.com/photo-1609220136736-443140cffec6?w=600&h=800&fit=crop"
+                             alt="Mother and baby in premium setting"
+                             class="hero-image">
+                        <div class="floating-card card-1">
+                            <div class="card-icon">✨</div>
+                            <p>Evidence-Based</p>
+                        </div>
+                        <div class="floating-card card-2">
+                            <div class="card-icon">🏆</div>
+                            <p>Top Rated</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Premium Features Section -->
+    <section class="premium-features">
+        <div class="features-container">
+            <div class="section-header">
+                <span class="section-label">
+                    <span class="lang-en">Why Choose WellMama</span>
+                    <span class="lang-ru hidden">Почему выбирают WellMama</span>
+                </span>
+                <h2 class="section-title">
+                    <span class="lang-en">Exceptional Care at Every Step</span>
+                    <span class="lang-ru hidden">Исключительная забота на каждом шаге</span>
+                </h2>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card" data-aos="fade-up">
+                    <div class="feature-icon">
+                        <div class="icon-gradient">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 2L2 7v10c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-9-5z"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <h3>
+                        <span class="lang-en">Certified Expertise</span>
+                        <span class="lang-ru hidden">Сертифицированная экспертиза</span>
+                    </h3>
+                    <p>
+                        <span class="lang-en">Board-certified pediatricians, lactation consultants, and child psychologists</span>
+                        <span class="lang-ru hidden">Сертифицированные педиатры, консультанты по ГВ и детские психологи</span>
+                    </p>
+                </div>
+
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-icon">
+                        <div class="icon-gradient">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <h3>
+                        <span class="lang-en">Rapid Response</span>
+                        <span class="lang-ru hidden">Быстрый ответ</span>
+                    </h3>
+                    <p>
+                        <span class="lang-en">Expert answers within 6 hours, emergency support available 24/7</span>
+                        <span class="lang-ru hidden">Ответы экспертов в течение 6 часов, экстренная поддержка 24/7</span>
+                    </p>
+                </div>
+
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-icon">
+                        <div class="icon-gradient">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <h3>
+                        <span class="lang-en">Personalized Care</span>
+                        <span class="lang-ru hidden">Персональная забота</span>
+                    </h3>
+                    <p>
+                        <span class="lang-en">Tailored guidance based on your baby's age and unique needs</span>
+                        <span class="lang-ru hidden">Индивидуальные рекомендации по возрасту и потребностям малыша</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Journey Section -->
+    <section class="journey-section">
+        <div class="journey-container">
+            <div class="section-header center">
+                <span class="section-label">
+                    <span class="lang-en">Your Personalized Path</span>
+                    <span class="lang-ru hidden">Ваш персональный путь</span>
+                </span>
+                <h2 class="section-title">
+                    <span class="lang-en">Select Your Current Stage</span>
+                    <span class="lang-ru hidden">Выберите ваш текущий этап</span>
+                </h2>
+            </div>
+
+            <div class="journey-selector">
+                <button class="journey-option" onclick="selectJourney('expecting')">
+                    <div class="option-gradient"></div>
+                    <div class="option-content">
+                        <div class="option-icon">🤰</div>
+                        <h4>
+                            <span class="lang-en">Expecting</span>
+                            <span class="lang-ru hidden">В ожидании</span>
+                        </h4>
+                        <p>
+                            <span class="lang-en">Prepare for arrival</span>
+                            <span class="lang-ru hidden">Подготовка к рождению</span>
+                        </p>
+                    </div>
+                </button>
+
+                <button class="journey-option" onclick="selectJourney('newborn')">
+                    <div class="option-gradient"></div>
+                    <div class="option-content">
+                        <div class="option-icon">👶</div>
+                        <h4>
+                            <span class="lang-en">0-3 Months</span>
+                            <span class="lang-ru hidden">0-3 месяца</span>
+                        </h4>
+                        <p>
+                            <span class="lang-en">Fourth trimester</span>
+                            <span class="lang-ru hidden">Четвёртый триместр</span>
+                        </p>
+                    </div>
+                </button>
+
+                <button class="journey-option" onclick="selectJourney('infant')">
+                    <div class="option-gradient"></div>
+                    <div class="option-content">
+                        <div class="option-icon">🍼</div>
+                        <h4>
+                            <span class="lang-en">3-12 Months</span>
+                            <span class="lang-ru hidden">3-12 месяцев</span>
+                        </h4>
+                        <p>
+                            <span class="lang-en">Growth & milestones</span>
+                            <span class="lang-ru hidden">Рост и развитие</span>
+                        </p>
+                    </div>
+                </button>
+
+                <button class="journey-option" onclick="selectJourney('toddler')">
+                    <div class="option-gradient"></div>
+                    <div class="option-content">
+                        <div class="option-icon">🚶‍♀️</div>
+                        <h4>
+                            <span class="lang-en">1-3 Years</span>
+                            <span class="lang-ru hidden">1-3 года</span>
+                        </h4>
+                        <p>
+                            <span class="lang-en">Toddler adventures</span>
+                            <span class="lang-ru hidden">Приключения малыша</span>
+                        </p>
+                    </div>
+                </button>
+            </div>
+
+            <div id="journey-content" class="journey-content hidden">
+                <div class="content-card">
+                    <h3 class="content-title"></h3>
+                    <div class="content-resources"></div>
+                    <a href="#consultation" class="btn-premium-primary">
+                        <span class="lang-en">Get Personalized Plan</span>
+                        <span class="lang-ru hidden">Получить персональный план</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Premium Resources Section -->
+    <section id="resources" class="premium-resources">
+        <div class="resources-container">
+            <div class="section-header center">
+                <span class="section-label">
+                    <span class="lang-en">Exclusive Content</span>
+                    <span class="lang-ru hidden">Эксклюзивный контент</span>
+                </span>
+                <h2 class="section-title">
+                    <span class="lang-en">Premium Resources Library</span>
+                    <span class="lang-ru hidden">Библиотека премиальных ресурсов</span>
+                </h2>
+            </div>
+
+            <div class="resource-categories">
+                <button class="category-pill active" onclick="filterResources('all')">
+                    <span class="lang-en">All</span>
+                    <span class="lang-ru hidden">Все</span>
+                </button>
+                <button class="category-pill" onclick="filterResources('sleep')">
+                    <span class="lang-en">Sleep</span>
+                    <span class="lang-ru hidden">Сон</span>
+                </button>
+                <button class="category-pill" onclick="filterResources('nutrition')">
+                    <span class="lang-en">Nutrition</span>
+                    <span class="lang-ru hidden">Питание</span>
+                </button>
+                <button class="category-pill" onclick="filterResources('wellness')">
+                    <span class="lang-en">Wellness</span>
+                    <span class="lang-ru hidden">Здоровье</span>
+                </button>
+                <button class="category-pill" onclick="filterResources('development')">
+                    <span class="lang-en">Development</span>
+                    <span class="lang-ru hidden">Развитие</span>
+                </button>
+            </div>
+
+            <div class="resources-showcase">
+                <article class="resource-card premium" data-category="sleep">
+                    <div class="resource-image">
+                        <img src="https://images.unsplash.com/photo-1515488042361-ee00e0ddd4e4?w=400&h=280&fit=crop" alt="Sleep guide">
+                        <div class="resource-badge">Premium</div>
+                    </div>
+                    <div class="resource-content">
+                        <div class="resource-meta">
+                            <span class="category">Sleep</span>
+                            <span class="duration">15 min read</span>
+                        </div>
+                        <h3>
+                            <span class="lang-en">The Complete Sleep Training Guide</span>
+                            <span class="lang-ru hidden">Полное руководство по обучению сну</span>
+                        </h3>
+                        <p>
+                            <span class="lang-en">Evidence-based methods for every parenting style</span>
+                            <span class="lang-ru hidden">Научные методы для каждого стиля воспитания</span>
+                        </p>
+                        <div class="resource-author">
+                            <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=40&h=40&fit=crop" alt="Emily Chen">
+                            <div class="author-info">
+                                <span class="author-name">Emily Chen</span>
+                                <span class="author-title">
+                                    <span class="lang-en">Sleep Coach & Educator</span>
+                                    <span class="lang-ru hidden">Консультант по сну</span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="resource-card" data-category="nutrition">
+                    <div class="resource-image">
+                        <img src="https://images.unsplash.com/photo-1490885578174-acda8905c2c6?w=400&h=280&fit=crop" alt="Feeding guide">
+                        <div class="resource-badge">Video</div>
+                    </div>
+                    <div class="resource-content">
+                        <div class="resource-meta">
+                            <span class="category">Nutrition</span>
+                            <span class="duration">12 min video</span>
+                        </div>
+                        <h3>
+                            <span class="lang-en">Mastering Breastfeeding Techniques</span>
+                            <span class="lang-ru hidden">Мастерство грудного вскармливания</span>
+                        </h3>
+                        <p>
+                            <span class="lang-en">Step-by-step visual guide with expert tips</span>
+                            <span class="lang-ru hidden">Пошаговое визуальное руководство с советами</span>
+                        </p>
+                        <div class="resource-author">
+                            <img src="https://images.unsplash.com/photo-1594824476967-48c8b964273f?w=40&h=40&fit=crop" alt="Maria Rodriguez">
+                            <div class="author-info">
+                                <span class="author-name">Maria Rodriguez</span>
+                                <span class="author-title">
+                                    <span class="lang-en">IBCLC</span>
+                                    <span class="lang-ru hidden">Консультант по ГВ</span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="resource-card" data-category="wellness">
+                    <div class="resource-image">
+                        <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=400&h=280&fit=crop" alt="Wellness guide">
+                        <div class="resource-badge">Guide</div>
+                    </div>
+                    <div class="resource-content">
+                        <div class="resource-meta">
+                            <span class="category">Wellness</span>
+                            <span class="duration">20 min read</span>
+                        </div>
+                        <h3>
+                            <span class="lang-en">Postpartum Recovery Blueprint</span>
+                            <span class="lang-ru hidden">План восстановления после родов</span>
+                        </h3>
+                        <p>
+                            <span class="lang-en">Your complete guide to physical and emotional healing</span>
+                            <span class="lang-ru hidden">Полное руководство по физическому и эмоциональному восстановлению</span>
+                        </p>
+                        <div class="resource-author">
+                            <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=40&h=40&fit=crop" alt="Sarah Johnson">
+                            <div class="author-info">
+                                <span class="author-name">Sarah Johnson</span>
+                                <span class="author-title">
+                                    <span class="lang-en">Wellness Coach</span>
+                                    <span class="lang-ru hidden">Тренер по благополучию</span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <div class="resources-cta">
+                <a href="#" class="btn-premium-secondary">
+                    <span class="lang-en">Explore All Resources</span>
+                    <span class="lang-ru hidden">Все ресурсы</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Expertise Section -->
+    <section id="expertise" class="expertise-section">
+        <div class="expertise-container">
+            <div class="section-header center">
+                <span class="section-label">
+                    <span class="lang-en">Meet Your Team</span>
+                    <span class="lang-ru hidden">Познакомьтесь с командой</span>
+                </span>
+                <h2 class="section-title">
+                    <span class="lang-en">World-Class Expertise</span>
+                    <span class="lang-ru hidden">Экспертиза мирового класса</span>
+                </h2>
+            </div>
+
+            <div class="experts-carousel">
+                <div class="expert-profile">
+                    <div class="expert-image-wrapper">
+                        <div class="expert-gradient"></div>
+                        <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=400&h=500&fit=crop" alt="Emily Chen">
+                        <div class="expert-credentials">
+                            <span>Certified Sleep Coach</span>
+                            <span>15+ Years</span>
+                        </div>
+                    </div>
+                    <div class="expert-info">
+                        <h3>Emily Chen</h3>
+                        <p class="expert-specialty">
+                            <span class="lang-en">Infant Sleep Education</span>
+                            <span class="lang-ru hidden">Обучение детскому сну</span>
+                        </p>
+                        <p class="expert-bio">
+                            <span class="lang-en">Helping families develop healthy sleep habits through gentle, evidence-based approaches.</span>
+                            <span class="lang-ru hidden">Помогает семьям развивать здоровые привычки сна через мягкие методы.</span>
+                        </p>
+                        <div class="expert-achievements">
+                            <span class="achievement">📚 Published Author</span>
+                            <span class="achievement">🏆 Top Doctor 2023</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="expert-profile">
+                    <div class="expert-image-wrapper">
+                        <div class="expert-gradient"></div>
+                        <img src="https://images.unsplash.com/photo-1594824476967-48c8b964273f?w=400&h=500&fit=crop" alt="Maria Rodriguez">
+                        <div class="expert-credentials">
+                            <span>Certified Lactation Educator</span>
+                            <span>12+ Years</span>
+                        </div>
+                    </div>
+                    <div class="expert-info">
+                        <h3>Maria Rodriguez</h3>
+                        <p class="expert-specialty">
+                            <span class="lang-en">Lactation Educator</span>
+                            <span class="lang-ru hidden">Консультант по ГВ</span>
+                        </p>
+                        <p class="expert-bio">
+                            <span class="lang-en">Specializing in complex breastfeeding challenges and maternal nutrition optimization.</span>
+                            <span class="lang-ru hidden">Специализация на сложных проблемах грудного вскармливания и оптимизации питания матери.</span>
+                        </p>
+                        <div class="expert-achievements">
+                            <span class="achievement">🌟 5000+ Families Helped</span>
+                            <span class="achievement">💝 NICU Specialist</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Premium Community Section -->
+    <section id="community" class="premium-community">
+        <div class="community-container">
+            <div class="community-content">
+                <div class="community-text">
+                    <span class="section-label">
+                        <span class="lang-en">Exclusive Community</span>
+                        <span class="lang-ru hidden">Эксклюзивное сообщество</span>
+                    </span>
+                    <h2>
+                        <span class="lang-en">Join an Elite Network of Mothers</span>
+                        <span class="lang-ru hidden">Присоединяйтесь к элитной сети матерей</span>
+                    </h2>
+                    <p>
+                        <span class="lang-en">Connect with like-minded mothers in our private, moderated community. Share experiences, get instant support, and build lasting friendships.</span>
+                        <span class="lang-ru hidden">Общайтесь с единомышленницами в нашем приватном модерируемом сообществе. Делитесь опытом, получайте мгновенную поддержку и заводите настоящих друзей.</span>
+                    </p>
+
+                    <div class="community-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">2,547</span>
+                            <span class="stat-label">
+                                <span class="lang-en">Active Members</span>
+                                <span class="lang-ru hidden">Активных участниц</span>
+                            </span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">24/7</span>
+                            <span class="stat-label">
+                                <span class="lang-en">Moderation</span>
+                                <span class="lang-ru hidden">Модерация</span>
+                            </span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">50+</span>
+                            <span class="stat-label">
+                                <span class="lang-en">Daily Posts</span>
+                                <span class="lang-ru hidden">Постов в день</span>
+                            </span>
+                        </div>
+                    </div>
+
+                    <a href="#" class="btn-premium-primary">
+                        <span class="lang-en">Request Invitation</span>
+                        <span class="lang-ru hidden">Запросить приглашение</span>
+                    </a>
+                </div>
+
+                <div class="community-visual">
+                    <div class="testimonial-stack">
+                        <div class="testimonial-card active">
+                            <div class="testimonial-header">
+                                <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=60&h=60&fit=crop" alt="Sarah">
+                                <div class="testimonial-author">
+                                    <span class="author-name">Sarah Mitchell</span>
+                                    <span class="author-role">
+                                        <span class="lang-en">Mom of twins</span>
+                                        <span class="lang-ru hidden">Мама близнецов</span>
+                                    </span>
+                                </div>
+                                <div class="testimonial-rating">★★★★★</div>
+                            </div>
+                            <p>
+                                <span class="lang-en">"This community has been my lifeline. The support is genuine, immediate, and judgment-free."</span>
+                                <span class="lang-ru hidden">"Это сообщество стало моей спасательной линией. Поддержка искренняя, мгновенная и без осуждения."</span>
+                            </p>
+                        </div>
+
+                        <div class="testimonial-card">
+                            <div class="testimonial-header">
+                                <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=60&h=60&fit=crop" alt="Emma">
+                                <div class="testimonial-author">
+                                    <span class="author-name">Emma Chen</span>
+                                    <span class="author-role">
+                                        <span class="lang-en">First-time mom</span>
+                                        <span class="lang-ru hidden">Мама впервые</span>
+                                    </span>
+                                </div>
+                                <div class="testimonial-rating">★★★★★</div>
+                            </div>
+                            <p>
+                                <span class="lang-en">"Expert advice that actually works. Worth every penny of the premium membership."</span>
+                                <span class="lang-ru hidden">"Экспертные советы, которые действительно работают. Стоит каждого рубля премиум-членства."</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Premium Consultation Section -->
+    <section id="consultation" class="consultation-section">
+        <div class="consultation-container">
+            <div class="consultation-card">
+                <div class="card-gradient"></div>
+                <div class="card-content">
+                    <h2 class="consultation-title">
+                        <span class="gradient-text">Ask Our Wellness Experts</span><br>
+                        <span class="lang-en">Get Your Questions Answered</span>
+                        <span class="lang-ru hidden">Получите ответы на ваши вопросы</span>
+                    </h2>
+                    <p class="consultation-subtitle">
+                        <span class="lang-en">Join 10,000+ mothers receiving weekly tips and expert guidance</span>
+                        <span class="lang-ru hidden">Присоединяйтесь к 10,000+ мам, получающих еженедельные советы</span>
+                    </p>
+
+                    <form class="premium-form" onsubmit="handleConsultation(event)">
+                        <div class="form-row">
+                            <div class="form-field">
+                                <label>
+                                    <span class="lang-en">Your Name</span>
+                                    <span class="lang-ru hidden">Ваше имя</span>
+                                </label>
+                                <input type="text" required class="premium-input">
+                            </div>
+                            <div class="form-field">
+                                <label>
+                                    <span class="lang-en">Email Address</span>
+                                    <span class="lang-ru hidden">Электронная почта</span>
+                                </label>
+                                <input type="email" required class="premium-input">
+                            </div>
+                        </div>
+
+                        <div class="form-field">
+                            <label>
+                                <span class="lang-en">Baby's Age</span>
+                                <span class="lang-ru hidden">Возраст малыша</span>
+                            </label>
+                            <select class="premium-select" required>
+                                <option value="">
+                                    <span class="lang-en">Select age range</span>
+                                    <span class="lang-ru hidden">Выберите возраст</span>
+                                </option>
+                                <option value="expecting">
+                                    <span class="lang-en">Expecting</span>
+                                    <span class="lang-ru hidden">В ожидании</span>
+                                </option>
+                                <option value="0-3">0-3 months</option>
+                                <option value="3-6">3-6 months</option>
+                                <option value="6-12">6-12 months</option>
+                                <option value="1-2">1-2 years</option>
+                                <option value="2-3">2-3 years</option>
+                            </select>
+                        </div>
+
+                        <div class="form-field">
+                            <label>
+                                <span class="lang-en">Your Question</span>
+                                <span class="lang-ru hidden">Ваш вопрос</span>
+                            </label>
+                            <textarea class="premium-textarea" rows="4" required placeholder="Ask anything about sleep, feeding, development, or self-care..."></textarea>
+                        </div>
+
+                        <div class="form-field checkbox-field">
+                            <label class="checkbox-label">
+                                <input type="checkbox" checked>
+                                <span class="lang-en">✓ Yes, send me weekly parenting tips and exclusive resources</span>
+                                <span class="lang-ru hidden">✓ Да, присылайте мне еженедельные советы и эксклюзивные материалы</span>
+                            </label>
+                        </div>
+
+                        <div class="form-footer">
+                            <button type="submit" class="btn-premium-submit">
+                                <span class="lang-en">Get Your Answer + Free Resources</span>
+                                <span class="lang-ru hidden">Получить ответ + бесплатные материалы</span>
+                            </button>
+                            <p class="form-note">
+                                <span class="lang-en">✓ Free Forever • ✓ Unsubscribe Anytime • ✓ No Spam</span>
+                                <span class="lang-ru hidden">✓ Бесплатно навсегда • ✓ Отписка в любое время • ✓ Без спама</span>
+                            </p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Premium Footer -->
+    <footer class="premium-footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <div class="logo-symbol">
+                            <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="20" cy="15" r="10" fill="#9333EA"/>
+                                <path d="M10 22 Q10 32, 20 32 Q30 32, 30 22" stroke="#9333EA" stroke-width="2" fill="none"/>
+                            </svg>
+                        </div>
+                        <span>WellMama</span>
+                    </div>
+                    <p>
+                        <span class="lang-en">Premium maternal care for the modern mother</span>
+                        <span class="lang-ru hidden">Премиальная забота для современной матери</span>
+                    </p>
+                </div>
+
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>
+                            <span class="lang-en">Resources</span>
+                            <span class="lang-ru hidden">Ресурсы</span>
+                        </h4>
+                        <a href="#">
+                            <span class="lang-en">Expert Articles</span>
+                            <span class="lang-ru hidden">Статьи экспертов</span>
+                        </a>
+                        <a href="#">
+                            <span class="lang-en">Video Library</span>
+                            <span class="lang-ru hidden">Видеотека</span>
+                        </a>
+                        <a href="#">
+                            <span class="lang-en">Downloadables</span>
+                            <span class="lang-ru hidden">Материалы для скачивания</span>
+                        </a>
+                    </div>
+
+                    <div class="footer-column">
+                        <h4>
+                            <span class="lang-en">Support</span>
+                            <span class="lang-ru hidden">Поддержка</span>
+                        </h4>
+                        <a href="#">
+                            <span class="lang-en">Contact Us</span>
+                            <span class="lang-ru hidden">Связаться с нами</span>
+                        </a>
+                        <a href="#">
+                            <span class="lang-en">FAQ</span>
+                            <span class="lang-ru hidden">Частые вопросы</span>
+                        </a>
+                        <a href="#">
+                            <span class="lang-en">Emergency Help</span>
+                            <span class="lang-ru hidden">Экстренная помощь</span>
+                        </a>
+                    </div>
+
+                    <div class="footer-column">
+                        <h4>
+                            <span class="lang-en">Legal</span>
+                            <span class="lang-ru hidden">Юридическая информация</span>
+                        </h4>
+                        <a href="#">
+                            <span class="lang-en">Privacy Policy</span>
+                            <span class="lang-ru hidden">Политика конфиденциальности</span>
+                        </a>
+                        <a href="#">
+                            <span class="lang-en">Terms of Service</span>
+                            <span class="lang-ru hidden">Условия обслуживания</span>
+                        </a>
+                        <a href="#">
+                            <span class="lang-en">Wellness Disclaimer</span>
+                            <span class="lang-ru hidden">Отказ от ответственности</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>© 2024 WellMama Premium. All rights reserved.</p>
+                <div class="social-links">
+                    <a href="#" aria-label="Instagram">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zM5.838 12a6.162 6.162 0 1 1 12.324 0 6.162 6.162 0 0 1-12.324 0zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm4.965-10.405a1.44 1.44 0 1 1 2.881.001 1.44 1.44 0 0 1-2.881-.001z"/>
+                        </svg>
+                    </a>
+                    <a href="#" aria-label="Facebook">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M18.77 7.46H14.5v-1.9c0-.9.6-1.1 1-1.1h3V.5h-4.33C10.24.5 9.5 3.44 9.5 5.32v2.15h-3v4h3v12h5v-12h3.85l.42-4z"/>
+                        </svg>
+                    </a>
+                    <a href="#" aria-label="YouTube">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Action Button -->
+    <button class="fab" onclick="scrollToTop()">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M12 19V5M5 12l7-7 7 7"/>
+        </svg>
+    </button>
+
+    <script src="wellmama-premium.js"></script>
+</body>
+</html>
