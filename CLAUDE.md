@@ -9,18 +9,31 @@
 
 This platform provides educational materials, community support, and wellness guidance only. It does not offer medical diagnoses, treatments, or clinical services. Users should always consult qualified healthcare professionals for medical concerns.
 
+## 🌍 GLOBAL ACCESSIBILITY & FREE SERVICE
+**IMPORTANT: Despite the "premium" branding, this service is completely FREE for all mothers worldwide.**
+- Available to mothers from all countries and backgrounds
+- No subscription fees or hidden charges
+- Premium design aesthetic does not mean premium pricing
+- Free "Ask a Question" feature for mothers to get answers to their concerns
+- Inclusive platform welcoming all mothers regardless of economic status
+- The "premium" terminology refers only to the quality of content and design, not cost
+
 ## Project Overview
 WellMama is a premium maternal wellness and education platform designed to provide emotional support, educational resources, and community connections for new mothers (post-delivery) and mothers with children under 3 years old. The website features a bilingual (English/Russian) interface with a focus on user engagement and building a supportive community.
 
 ## Current Active Version
-**Premium Design** - `wellmama-premium.html` (Latest and most sophisticated version)
+**Premium Design** - `index.html` (Latest and most sophisticated version)
+- Uses `wellmama-premium.css` for styling
+- Uses `wellmama-premium.js` for functionality
+- Features hero image: `Hero_1st_Mum_with_infant_and_toddle.jpeg`
 
 ## File Structure
 
 ### Main Files (Premium Version - CURRENT)
-- `wellmama-premium.html` - Premium HTML with luxury design elements
+- `index.html` - Main HTML file with luxury design elements (formerly wellmama-premium.html)
 - `wellmama-premium.css` - Sophisticated styling with gradients and animations
 - `wellmama-premium.js` - Advanced JavaScript with smooth interactions
+- `Hero_1st_Mum_with_infant_and_toddle.jpeg` - Hero section image showing mother with infant and toddler
 
 ### Previous Versions (Historical)
 - `wellmama-final.html` - Original version with dropdown language issue (fixed)
@@ -74,14 +87,16 @@ Users select their motherhood stage:
 
 Resources and content dynamically filter based on selection.
 
-### 3. Ask a Question System (Lead Generation)
-**UPDATED: Changed from "Consultation" to "Ask a Question" for subscriber collection**
-- Purpose: Collect email subscribers while providing value
+### 3. Ask a Question System (Lead Generation & Support)
+**UPDATED: Free Q&A Service for Global Mother Community**
+- **Completely FREE service** for all mothers worldwide
+- Purpose: Help mothers get answers to questions that bother them
+- Collect email subscribers while providing genuine value
 - Not medical consultations - educational Q&A only
 - Expert profiles show educators/wellness coaches (not doctors)
-- Form collects email as primary goal
+- Form collects email as primary goal for follow-up support
 - Auto-subscribe to newsletter with consent checkbox
-- Follow-up email sequences for engagement
+- Mothers can ask about any concerns regarding babies/toddlers (0-3 years)
 
 ### 4. Resource Library
 Categories:

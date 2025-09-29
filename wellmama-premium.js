@@ -47,38 +47,43 @@ class WellMamaPremium {
     }
 
     setLanguage(lang) {
-        // Update language toggle with animation
-        const langToggle = document.querySelector('.lang-toggle');
-        if (langToggle) {
-            langToggle.style.transform = 'scale(0.95)';
-            setTimeout(() => {
+        // Update language toggle with animation - Fixed to work with actual HTML structure
+        const languageSwitcher = document.querySelector('.language-switcher');
+        if (languageSwitcher) {
+            const indicators = languageSwitcher.querySelectorAll('.lang-indicator');
+            if (indicators.length === 2) {
                 if (lang === 'en') {
-                    langToggle.innerHTML = '<span class="lang-active">EN</span> / <span class="lang-inactive">RU</span>';
+                    indicators[0].classList.add('active');
+                    indicators[1].classList.remove('active');
                 } else {
-                    langToggle.innerHTML = '<span class="lang-inactive">EN</span> / <span class="lang-active">RU</span>';
+                    indicators[0].classList.remove('active');
+                    indicators[1].classList.add('active');
                 }
-                langToggle.style.transform = 'scale(1)';
-            }, 150);
+            }
         }
 
-        // Smooth language content transition
+        // Smooth language content transition - Fixed to properly handle hidden class
         document.querySelectorAll('.lang-en').forEach(el => {
             if (lang === 'en') {
+                el.classList.remove('hidden');
                 el.style.display = 'block';
-                setTimeout(() => el.style.opacity = '1', 50);
+                el.style.opacity = '1';
             } else {
+                el.classList.add('hidden');
                 el.style.opacity = '0';
-                setTimeout(() => el.style.display = 'none', 300);
+                el.style.display = 'none';
             }
         });
 
         document.querySelectorAll('.lang-ru').forEach(el => {
             if (lang === 'ru') {
+                el.classList.remove('hidden');
                 el.style.display = 'block';
-                setTimeout(() => el.style.opacity = '1', 50);
+                el.style.opacity = '1';
             } else {
+                el.classList.add('hidden');
                 el.style.opacity = '0';
-                setTimeout(() => el.style.display = 'none', 300);
+                el.style.display = 'none';
             }
         });
 
@@ -602,6 +607,12 @@ class WellMamaPremium {
 
 // Initialize Premium Experience
 const wellmama = new WellMamaPremium();
+
+// Ensure language is properly set on page load
+document.addEventListener('DOMContentLoaded', () => {
+    // Force refresh of language display
+    wellmama.setLanguage(wellmama.currentLang);
+});
 
 // Global functions for inline HTML calls
 function toggleLanguage() {

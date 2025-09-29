@@ -105,7 +105,26 @@ p {
 
 /* Utility Classes */
 .hidden {
-    display: none !important;
+    display: none;
+}
+
+/* Language visibility */
+.lang-en, .lang-ru {
+    transition: opacity 0.3s ease;
+}
+
+.lang-en:not(.hidden), .lang-ru:not(.hidden) {
+    display: inline-block;
+}
+
+/* Block-level language elements */
+p.lang-en:not(.hidden), p.lang-ru:not(.hidden),
+div.lang-en:not(.hidden), div.lang-ru:not(.hidden),
+h1.lang-en:not(.hidden), h1.lang-ru:not(.hidden),
+h2.lang-en:not(.hidden), h2.lang-ru:not(.hidden),
+h3.lang-en:not(.hidden), h3.lang-ru:not(.hidden),
+h4.lang-en:not(.hidden), h4.lang-ru:not(.hidden) {
+    display: block;
 }
 
 .gradient-text {
@@ -113,6 +132,15 @@ p {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+}
+
+.gradient-text .lang-en,
+.gradient-text .lang-ru {
+    background: inherit;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    display: inherit;
 }
 
 /* Announcement Bar */
