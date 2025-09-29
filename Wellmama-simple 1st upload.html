@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WellMama Reset Hub - Support for Moms</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="wellmama-styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="container">
+            <div class="nav-left">
+                <div class="logo">
+                    <div class="logo-icon">👶</div>
+                    <span>WellMama</span>
+                </div>
+                <div class="nav-links">
+                    <a href="#home" data-lang="en" class="active-lang">Home</a>
+                    <a href="#home" data-lang="ru">Главная</a>
+                    <a href="#ask" data-lang="en" class="active-lang">Form</a>
+                    <a href="#ask" data-lang="ru">Форма</a>
+                    <a href="#knowledge" data-lang="en" class="active-lang">Knowledge Base</a>
+                    <a href="#knowledge" data-lang="ru">База знаний</a>
+                    <a href="#checklists" data-lang="en" class="active-lang">Checklists</a>
+                    <a href="#checklists" data-lang="ru">Чек-листы</a>
+                    <a href="#about" data-lang="en" class="active-lang">About</a>
+                    <a href="#about" data-lang="ru">О нас</a>
+                </div>
+            </div>
+            <div class="nav-right">
+                <div class="lang-switcher">
+                    <button class="lang-btn active" data-language="en">EN</button>
+                    <button class="lang-btn" data-language="ru">RU</button>
+                </div>
+                <a href="#ask" class="ask-question-nav" data-lang="en" class="active-lang">Ask a Question</a>
+                <a href="#ask" class="ask-question-nav" data-lang="ru">Задать вопрос</a>
+                <button class="mobile-menu-btn">☰</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="#home" data-lang="en" class="active-lang">Home</a>
+        <a href="#home" data-lang="ru">Главная</a>
+        <a href="#ask" data-lang="en" class="active-lang">Form</a>
+        <a href="#ask" data-lang="ru">Форма</a>
+        <a href="#knowledge" data-lang="en" class="active-lang">Knowledge Base</a>
+        <a href="#knowledge" data-lang="ru">База знаний</a>
+        <a href="#checklists" data-lang="en" class="active-lang">Checklists</a>
+        <a href="#checklists" data-lang="ru">Чек-листы</a>
+        <a href="#about" data-lang="en" class="active-lang">About</a>
+        <a href="#about" data-lang="ru">О нас</a>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 data-lang="en" class="active-lang">Welcome to WellMama Reset Hub</h1>
+                    <h1 data-lang="ru">Добро пожаловать в WellMama Reset Hub</h1>
+                    <p data-lang="en" class="active-lang">Practical help and trusted advice for moms with children under 3 — all in one place.</p>
+                    <p data-lang="ru">Практическая помощь и проверенные советы для мам с детьми до 3 лет — всё в одном месте.</p>
+                    <button class="hero-cta" onclick="scrollToSection('ask')">
+                        <span data-lang="en" class="active-lang">ASK A QUESTION</span>
+                        <span data-lang="ru">ЗАДАТЬ ВОПРОС</span>
+                    </button>
+                    <div class="apply-note">
+                        <span class="clock-icon">⏰</span>
+                        <span data-lang="en" class="active-lang">We'll reply within 24 hours</span>
+                        <span data-lang="ru">Мы ответим в течение 24 часов</span>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <svg class="hero-illustration" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+                        <!-- Mother's hair -->
+                        <path d="M 120 100 Q 100 80, 110 60 Q 130 40, 160 35 Q 200 30, 240 40 Q 280 50, 290 80 Q 295 110, 280 140 L 260 180 L 240 160 Q 230 120, 200 110 Q 170 105, 150 110 Q 130 115, 120 100" fill="#4a3d36"/>
+
+                        <!-- Mother's face -->
+                        <ellipse cx="200" cy="120" rx="45" ry="55" fill="#f5d0b8"/>
+
+                        <!-- Mother's hair strands -->
+                        <path d="M 155 80 Q 145 100, 150 130 Q 155 160, 160 180" stroke="#4a3d36" stroke-width="8" fill="none"/>
+                        <path d="M 245 80 Q 255 100, 250 130 Q 245 160, 240 180" stroke="#4a3d36" stroke-width="8" fill="none"/>
+
+                        <!-- Mother's eyes (closed, peaceful) -->
+                        <path d="M 175 115 Q 185 118, 190 115" stroke="#333" stroke-width="2" stroke-linecap="round" fill="none"/>
+                        <path d="M 210 115 Q 215 118, 225 115" stroke="#333" stroke-width="2" stroke-linecap="round" fill="none"/>
+
+                        <!-- Mother's nose -->
+                        <path d="M 200 120 L 200 130" stroke="#e5b5a0" stroke-width="2" stroke-linecap="round"/>
+
+                        <!-- Mother's smile -->
+                        <path d="M 185 140 Q 200 145, 215 140" stroke="#d4745c" stroke-width="2" stroke-linecap="round" fill="none"/>
+
+                        <!-- Mother's blush -->
+                        <circle cx="170" cy="130" r="8" fill="#ffb5a0" opacity="0.3"/>
+                        <circle cx="230" cy="130" r="8" fill="#ffb5a0" opacity="0.3"/>
+
+                        <!-- Mother's body/clothes -->
+                        <path d="M 160 170 Q 150 180, 140 220 Q 135 260, 140 300 Q 145 340, 160 360 L 240 360 Q 255 340, 260 300 Q 265 260, 260 220 Q 250 180, 240 170" fill="#a8c5c1"/>
+
+                        <!-- Mother's arms -->
+                        <path d="M 160 200 Q 140 210, 135 230 Q 132 250, 140 270 Q 150 285, 170 290" stroke="#f5d0b8" stroke-width="18" stroke-linecap="round" fill="none"/>
+                        <path d="M 240 200 Q 260 210, 265 230 Q 268 250, 260 270 Q 250 285, 230 290" stroke="#f5d0b8" stroke-width="18" stroke-linecap="round" fill="none"/>
+
+                        <!-- Baby's body -->
+                        <ellipse cx="200" cy="250" rx="35" ry="45" fill="#fff"/>
+
+                        <!-- Baby's head -->
+                        <circle cx="200" cy="220" r="28" fill="#f5d0b8"/>
+
+                        <!-- Baby's hair -->
+                        <path d="M 175 205 Q 180 195, 190 193 Q 200 191, 210 193 Q 220 195, 225 205" stroke="#8b6f5c" stroke-width="3" stroke-linecap="round" fill="none"/>
+
+                        <!-- Baby's eyes (sleepy) -->
+                        <circle cx="190" cy="218" r="2" fill="#333"/>
+                        <circle cx="210" cy="218" r="2" fill="#333"/>
+
+                        <!-- Baby's nose -->
+                        <circle cx="200" cy="225" r="1.5" fill="#e5b5a0"/>
+
+                        <!-- Baby's mouth -->
+                        <path d="M 195 232 Q 200 234, 205 232" stroke="#d4745c" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+
+                        <!-- Baby's arms reaching up -->
+                        <path d="M 180 240 Q 170 230, 165 235" stroke="#f5d0b8" stroke-width="8" stroke-linecap="round" fill="none"/>
+                        <path d="M 220 240 Q 230 230, 235 235" stroke="#f5d0b8" stroke-width="8" stroke-linecap="round" fill="none"/>
+
+                        <!-- Baby's tiny fingers -->
+                        <circle cx="165" cy="235" r="4" fill="#f5d0b8"/>
+                        <circle cx="235" cy="235" r="4" fill="#f5d0b8"/>
+
+                        <!-- Heart symbols floating -->
+                        <text x="120" y="180" font-size="20" fill="#f5b5a3" opacity="0.6">💕</text>
+                        <text x="260" y="190" font-size="18" fill="#f5b5a3" opacity="0.5">💗</text>
+                        <text x="150" y="280" font-size="16" fill="#f5b5a3" opacity="0.4">💖</text>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ask a Question Section -->
+    <section id="ask" class="ask-section">
+        <div class="container">
+            <h2 class="section-title" data-lang="en" class="active-lang">Ask a Question</h2>
+            <h2 class="section-title" data-lang="ru">Задать вопрос</h2>
+            <p class="section-subtitle" data-lang="en" class="active-lang">Our experts are here to help. Ask us anything!</p>
+            <p class="section-subtitle" data-lang="ru">Наши эксперты готовы помочь. Спрашивайте о чём угодно!</p>
+
+            <form class="question-form" id="questionForm">
+                <div class="form-group">
+                    <label class="form-label" data-lang="en" class="active-lang">Category</label>
+                    <label class="form-label" data-lang="ru">Категория</label>
+                    <select class="form-control category-select" id="category" required>
+                        <option value="" data-text-en="Select Category" data-text-ru="Выберите категорию">Select Category</option>
+                        <option value="sleep" data-text-en="Baby's Sleep" data-text-ru="Сон ребёнка">Baby's Sleep</option>
+                        <option value="feeding" data-text-en="Breastfeeding" data-text-ru="Грудное вскармливание">Breastfeeding</option>
+                        <option value="wellness" data-text-en="Mental Wellness" data-text-ru="Психическое здоровье">Mental Wellness</option>
+                        <option value="support" data-text-en="Community Support" data-text-ru="Поддержка сообщества">Community Support</option>
+                        <option value="postpartum" data-text-en="Postpartum Care" data-text-ru="Послеродовой уход">Postpartum Care</option>
+                        <option value="safety" data-text-en="Safety Tips" data-text-ru="Советы по безопасности">Safety Tips</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label class="form-label" data-lang="en" class="active-lang">Your Email</label>
+                    <label class="form-label" data-lang="ru">Ваш Email</label>
+                    <input type="email" class="form-control" id="emailInput" placeholder="example@email.com" required>
+                </div>
+                <div class="form-group">
+                    <label class="form-label" data-lang="en" class="active-lang">Your Question</label>
+                    <label class="form-label" data-lang="ru">Ваш вопрос</label>
+                    <textarea class="form-control question-textarea" id="questionTextarea" placeholder="Type your question here..." required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">
+                    <span data-lang="en" class="active-lang">Submit Question</span>
+                    <span data-lang="ru">Отправить вопрос</span>
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Knowledge Base -->
+    <section id="knowledge" class="knowledge-base">
+        <div class="container">
+            <h2 class="section-title" data-lang="en" class="active-lang">Knowledge Base</h2>
+            <h2 class="section-title" data-lang="ru">База знаний</h2>
+            <p class="section-subtitle" data-lang="en" class="active-lang">Expert articles and guides to support your journey</p>
+            <p class="section-subtitle" data-lang="ru">Экспертные статьи и руководства для поддержки вашего пути</p>
+
+            <div class="kb-grid">
+                <div class="kb-card">
+                    <div class="kb-icon">😴</div>
+                    <h3 data-lang="en" class="active-lang">Baby's Sleep Updated4</h3>
+                    <h3 data-lang="ru">Сон ребёнка</h3>
+                    <p data-lang="en" class="active-lang">Tips and strategies for establishing healthy sleep habits for your baby and for you.</p>
+                    <p data-lang="ru">Советы и стратегии для формирования здоровых привычек сна у вашего ребёнка и для вас.</p>
+                    <a href="#" class="read-more">
+                        <span data-lang="en" class="active-lang">Read more →</span>
+                        <span data-lang="ru">Читать далее →</span>
+                    </a>
+                </div>
+                <div class="kb-card">
+                    <div class="kb-icon">🍼</div>
+                    <h3 data-lang="en" class="active-lang">Breastfeeding</h3>
+                    <h3 data-lang="ru">Грудное вскармливание</h3>
+                    <p data-lang="en" class="active-lang">Support for your breastfeeding journey, from latching techniques to milk supply concerns.</p>
+                    <p data-lang="ru">Поддержка вашего пути грудного вскармливания, от техник прикладывания до проблем с лактацией.</p>
+                    <a href="#" class="read-more">
+                        <span data-lang="en" class="active-lang">Read more →</span>
+                        <span data-lang="ru">Читать далее →</span>
+                    </a>
+                </div>
+                <div class="kb-card">
+                    <div class="kb-icon">👥</div>
+                    <h3 data-lang="en" class="active-lang">Community Support</h3>
+                    <h3 data-lang="ru">Поддержка сообщества</h3>
+                    <p data-lang="en" class="active-lang">Connect with other mothers, share experiences, and find your village of support.</p>
+                    <p data-lang="ru">Общайтесь с другими мамами, делитесь опытом и находите свой круг поддержки.</p>
+                    <a href="#" class="read-more">
+                        <span data-lang="en" class="active-lang">Read more →</span>
+                        <span data-lang="ru">Читать далее →</span>
+                    </a>
+                </div>
+                <div class="kb-card">
+                    <div class="kb-icon">💆‍♀️</div>
+                    <h3 data-lang="en" class="active-lang">Mental Wellness</h3>
+                    <h3 data-lang="ru">Психическое здоровье</h3>
+                    <p data-lang="en" class="active-lang">Resources for managing stress, postpartum depression, and prioritizing your mental health.</p>
+                    <p data-lang="ru">Ресурсы для управления стрессом, послеродовой депрессией и заботы о психическом здоровье.</p>
+                    <a href="#" class="read-more">
+                        <span data-lang="en" class="active-lang">Read more →</span>
+                        <span data-lang="ru">Читать далее →</span>
+                    </a>
+                </div>
+                <div class="kb-card">
+                    <div class="kb-icon">🤱</div>
+                    <h3 data-lang="en" class="active-lang">Postpartum Care</h3>
+                    <h3 data-lang="ru">Послеродовой уход</h3>
+                    <p data-lang="en" class="active-lang">Guidance on physical recovery, emotional well-being, and adjusting to your new life.</p>
+                    <p data-lang="ru">Руководство по физическому восстановлению, эмоциональному благополучию и адаптации к новой жизни.</p>
+                    <a href="#" class="read-more">
+                        <span data-lang="en" class="active-lang">Read more →</span>
+                        <span data-lang="ru">Читать далее →</span>
+                    </a>
+                </div>
+                <div class="kb-card">
+                    <div class="kb-icon">🛡️</div>
+                    <h3 data-lang="en" class="active-lang">Safety Tips</h3>
+                    <h3 data-lang="ru">Советы по безопасности</h3>
+                    <p data-lang="en" class="active-lang">Essential information on creating a safe environment for your baby from car seats to babyproofing.</p>
+                    <p data-lang="ru">Важная информация о создании безопасной среды для вашего ребёнка: от автокресел до защиты дома.</p>
+                    <a href="#" class="read-more">
+                        <span data-lang="en" class="active-lang">Read more →</span>
+                        <span data-lang="ru">Читать далее →</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Checklists Section -->
+    <section id="checklists" class="checklists">
+        <div class="container">
+            <h2 class="section-title" data-lang="en" class="active-lang">Helpful Checklists</h2>
+            <h2 class="section-title" data-lang="ru">Полезные чек-листы</h2>
+            <p class="section-subtitle" data-lang="en" class="active-lang">Download our free resources to stay organized</p>
+            <p class="section-subtitle" data-lang="ru">Скачайте наши бесплатные ресурсы для организации</p>
+
+            <div class="checklist-container">
+                <div class="stats-box">
+                    <div class="stats-icon">👩‍👧‍👦</div>
+                    <div class="stats-text">
+                        <h3 data-lang="en" class="active-lang">Over 560</h3>
+                        <h3 data-lang="ru">Более 560</h3>
+                        <p data-lang="en" class="active-lang">moms helped by our compassionate experts</p>
+                        <p data-lang="ru">мам получили помощь от наших заботливых экспертов</p>
+                    </div>
+                </div>
+                <div class="checklist-grid">
+                    <div class="checklist-item">
+                        <div class="checklist-info">
+                            <div class="checklist-icon">👶</div>
+                            <span class="checklist-title" data-lang="en" class="active-lang">Newborn Essentials</span>
+                            <span class="checklist-title" data-lang="ru">Необходимое для новорождённого</span>
+                        </div>
+                        <span class="pdf-badge">📄 PDF</span>
+                    </div>
+                    <div class="checklist-item">
+                        <div class="checklist-info">
+                            <div class="checklist-icon">💕</div>
+                            <span class="checklist-title" data-lang="en" class="active-lang">Self-Care Routine</span>
+                            <span class="checklist-title" data-lang="ru">Рутина самоухода</span>
+                        </div>
+                        <span class="pdf-badge">📄 PDF</span>
+                    </div>
+                    <div class="checklist-item">
+                        <div class="checklist-info">
+                            <div class="checklist-icon">🏠</div>
+                            <span class="checklist-title" data-lang="en" class="active-lang">Babyproofing Home</span>
+                            <span class="checklist-title" data-lang="ru">Безопасность дома для ребёнка</span>
+                        </div>
+                        <span class="pdf-badge">📄 PDF</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2 class="section-title" style="color: #d4745c;" data-lang="en" class="active-lang">About Us</h2>
+            <h2 class="section-title" style="color: #d4745c;" data-lang="ru">О нас</h2>
+            <p class="about-text" data-lang="en" class="active-lang">The WellMama Reset Hub is dedicated to providing mothers with the support and resources they need during the crucial early years of motherhood. Our team of experts and community of mothers are here to help you thrive.</p>
+            <p class="about-text" data-lang="ru">WellMama Reset Hub посвящён предоставлению матерям поддержки и ресурсов, необходимых в важные первые годы материнства. Наша команда экспертов и сообщество матерей здесь, чтобы помочь вам процветать.</p>
+        </div>
+    </section>
+
+    <!-- Community/Subscribe Section -->
+    <section id="subscribe" class="subscribe-section">
+        <div class="container">
+            <div class="subscribe-content">
+                <h2 data-lang="en" class="active-lang">Join Our Community</h2>
+                <h2 data-lang="ru">Присоединяйтесь к нашему сообществу</h2>
+                <p data-lang="en" class="active-lang">Get weekly tips, resources, and support straight to your inbox.</p>
+                <p data-lang="ru">Получайте еженедельные советы, ресурсы и поддержку прямо на вашу почту.</p>
+
+                <form class="subscribe-form" onsubmit="handleSubscribe(event)">
+                    <input type="email" id="subscribeEmail" class="email-input-field" placeholder="Your Email" required>
+
+                    <div class="interests-section">
+                        <p class="interests-label" data-lang="en" class="active-lang">I'm interested in:</p>
+                        <p class="interests-label" data-lang="ru">Меня интересует:</p>
+                        <div class="checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="interests" value="sleep">
+                                <span data-lang="en" class="active-lang">Sleep Tips</span>
+                                <span data-lang="ru">Советы по сну</span>
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="interests" value="feeding">
+                                <span data-lang="en" class="active-lang">Feeding</span>
+                                <span data-lang="ru">Кормление</span>
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="interests" value="wellness">
+                                <span data-lang="en" class="active-lang">Wellness</span>
+                                <span data-lang="ru">Здоровье</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="subscribe-button">
+                        <span data-lang="en" class="active-lang">Subscribe Now</span>
+                        <span data-lang="ru">Подписаться сейчас</span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="disclaimer-section">
+                <p class="disclaimer-label">
+                    <strong data-lang="en" class="active-lang">Important:</strong>
+                    <strong data-lang="ru">Важно:</strong>
+                </p>
+                <p class="disclaimer-text" data-lang="en" class="active-lang">If you are in immediate danger, please call emergency services or go to your nearest emergency room. For crisis support, contact the National Maternal Mental Health Hotline at 1-800-944-4773.</p>
+                <p class="disclaimer-text" data-lang="ru">Если вы находитесь в непосредственной опасности, пожалуйста, позвоните в службу экстренной помощи или обратитесь в ближайшее отделение скорой помощи. Для кризисной поддержки звоните на горячую линию 1-800-944-4773.</p>
+            </div>
+
+            <div class="footer-social">
+                <a href="#" class="footer-social-link" title="Facebook">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M18.77 7.46H14.5v-1.9c0-.9.6-1.1 1-1.1h3V.5h-4.33C10.24.5 9.5 3.44 9.5 5.32v2.15h-3v4h3v12h5v-12h3.85l.42-4z"/>
+                    </svg>
+                </a>
+                <a href="#" class="footer-social-link" title="Instagram">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zM5.838 12a6.162 6.162 0 1 1 12.324 0 6.162 6.162 0 0 1-12.324 0zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm4.965-10.405a1.44 1.44 0 1 1 2.881.001 1.44 1.44 0 0 1-2.881-.001z"/>
+                    </svg>
+                </a>
+                <a href="#" class="footer-social-link" title="YouTube">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/>
+                    </svg>
+                </a>
+            </div>
+
+            <div class="footer-bottom">
+                <p data-lang="en" class="active-lang">© 2024 WellMama Reset Hub. All rights reserved.</p>
+                <p data-lang="ru">© 2024 WellMama Reset Hub. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Success Message -->
+    <div class="success-message" id="successMessage">
+        <span data-lang="en" class="active-lang">✓ Successfully submitted!</span>
+        <span data-lang="ru">✓ Успешно отправлено!</span>
+    </div>
+
+    <script>
+        // Language switching functionality
+        const langButtons = document.querySelectorAll('.lang-btn');
+        let currentLang = 'en';
+
+        function switchLanguage(lang) {
+            currentLang = lang;
+
+            // Update language buttons
+            langButtons.forEach(btn => {
+                if (btn.dataset.language === lang) {
+                    btn.classList.add('active');
+                } else {
+                    btn.classList.remove('active');
+                }
+            });
+
+            // Update all text elements
+            document.querySelectorAll('[data-lang]').forEach(element => {
+                if (element.dataset.lang === lang) {
+                    element.classList.add('active-lang');
+                    element.classList.remove('hidden');
+                } else {
+                    element.classList.remove('active-lang');
+                    element.classList.add('hidden');
+                }
+            });
+
+            // Update HTML lang attribute
+            document.documentElement.lang = lang;
+
+            // Update form placeholders based on language
+            updateFormPlaceholders(lang);
+
+            // Save language preference
+            localStorage.setItem('preferredLanguage', lang);
+        }
+
+        function updateFormPlaceholders(lang) {
+            const emailInput = document.getElementById('emailInput');
+            const subscribeEmail = document.getElementById('subscribeEmail');
+            const questionTextarea = document.getElementById('questionTextarea');
+
+            if (lang === 'ru') {
+                if (emailInput) emailInput.placeholder = 'Ваш Email';
+                if (subscribeEmail) subscribeEmail.placeholder = 'Ваш Email';
+                if (questionTextarea) questionTextarea.placeholder = 'Введите ваш вопрос здесь...';
+            } else {
+                if (emailInput) emailInput.placeholder = 'example@email.com';
+                if (subscribeEmail) subscribeEmail.placeholder = 'Your Email';
+                if (questionTextarea) questionTextarea.placeholder = 'Type your question here...';
+            }
+
+            // Update dropdown options based on language
+            const categorySelect = document.getElementById('category');
+            if (categorySelect) {
+                const options = categorySelect.querySelectorAll('option');
+                options.forEach(option => {
+                    const textEn = option.getAttribute('data-text-en');
+                    const textRu = option.getAttribute('data-text-ru');
+                    if (textEn && textRu) {
+                        option.textContent = lang === 'ru' ? textRu : textEn;
+                    }
+                });
+            }
+        }
+
+        // Add click listeners to language buttons
+        langButtons.forEach(btn => {
+            btn.addEventListener('click', () => {
+                switchLanguage(btn.dataset.language);
+            });
+        });
+
+        // Load saved language preference
+        const savedLang = localStorage.getItem('preferredLanguage') || 'en';
+        switchLanguage(savedLang);
+
+        // Initialize dropdown with correct language
+        updateFormPlaceholders(savedLang);
+
+        // Smooth scrolling
+        function scrollToSection(sectionId) {
+            const element = document.getElementById(sectionId);
+            if (element) {
+                element.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+
+        // Mobile menu toggle
+        const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobileMenu');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('active');
+            mobileMenuBtn.textContent = mobileMenu.classList.contains('active') ? '✕' : '☰';
+        });
+
+        // Close mobile menu when clicking links
+        mobileMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.remove('active');
+                mobileMenuBtn.textContent = '☰';
+            });
+        });
+
+        // Handle question form submission
+        document.getElementById('questionForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            showSuccessMessage();
+            this.reset();
+            // Reset placeholders after form reset
+            updateFormPlaceholders(currentLang);
+        });
+
+        // Handle newsletter subscription
+        function handleSubscribe(e) {
+            e.preventDefault();
+            showSuccessMessage();
+            e.target.reset();
+            // Reset placeholders after form reset
+            updateFormPlaceholders(currentLang);
+        }
+
+        // Show success message
+        function showSuccessMessage() {
+            const successMsg = document.getElementById('successMessage');
+            successMsg.style.display = 'block';
+            setTimeout(() => {
+                successMsg.style.display = 'none';
+            }, 3000);
+        }
+
+        // Add smooth scrolling to all navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href').substring(1);
+                scrollToSection(targetId);
+            });
+        });
+
+        // Animate elements on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Add animation to cards
+        document.querySelectorAll('.kb-card, .checklist-item').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(20px)';
+            el.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+            observer.observe(el);
+        });
+
+        // Add parallax effect to hero section
+        window.addEventListener('scroll', () => {
+            const scrolled = window.pageYOffset;
+            const hero = document.querySelector('.hero');
+            if (hero) {
+                hero.style.transform = `translateY(${scrolled * 0.3}px)`;
+            }
+        });
+
+        // Add active state to navigation based on scroll
+        window.addEventListener('scroll', () => {
+            const sections = document.querySelectorAll('section');
+            const navLinks = document.querySelectorAll('.nav-links a');
+
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (pageYOffset >= sectionTop - 100) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href').substring(1) === current) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
