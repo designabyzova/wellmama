@@ -127,6 +127,15 @@ h4.lang-en:not(.hidden), h4.lang-ru:not(.hidden) {
     display: block;
 }
 
+/* Ensure language elements inside buttons maintain color */
+.premium-cta .lang-en:not(.hidden),
+.premium-cta .lang-ru:not(.hidden),
+.premium-cta-mobile .lang-en:not(.hidden),
+.premium-cta-mobile .lang-ru:not(.hidden) {
+    color: inherit !important;
+    display: inline !important;
+}
+
 .gradient-text {
     background: var(--gradient-primary);
     -webkit-background-clip: text;

@@ -238,7 +238,7 @@
     align-items: center;
     gap: 6px;
     background: var(--gradient-primary);
-    color: var(--white);
+    color: var(--white) !important;
     padding: 8px 16px;
     border-radius: 25px;
     text-decoration: none;
@@ -246,6 +246,23 @@
     font-weight: 600;
     transition: all 0.2s ease;
     white-space: nowrap;
+}
+
+/* Ensure text is always visible */
+.premium-cta-mobile span {
+    color: var(--white) !important;
+}
+
+.premium-cta-mobile .lang-en,
+.premium-cta-mobile .lang-ru {
+    color: var(--white) !important;
+    opacity: 1 !important;
+}
+
+.premium-cta-mobile .lang-en:not(.hidden),
+.premium-cta-mobile .lang-ru:not(.hidden) {
+    display: inline !important;
+    color: var(--white) !important;
 }
 
 .premium-cta-mobile:hover {
@@ -256,6 +273,7 @@
 .premium-cta-mobile .cta-arrow {
     font-size: 1.1em;
     transition: transform 0.2s ease;
+    color: var(--white) !important;
 }
 
 .premium-cta-mobile:hover .cta-arrow {
@@ -295,23 +313,13 @@
         font-size: 0.75rem;
     }
 
-    .premium-cta-mobile .lang-ru {
-        display: none !important; /* Hide Russian text to save space */
-    }
-
-    .premium-cta-mobile .lang-en {
-        display: inline !important;
-    }
+    /* Remove the hiding of Russian text - let it show properly */
 
     /* Make buttons more compact on very small screens */
     @media only screen and (max-width: 374px) {
-        .premium-cta-mobile span:not(.cta-arrow) {
-            display: none;
-        }
-
-        .premium-cta-mobile::before {
-            content: "Ask";
-            display: inline;
+        .premium-cta-mobile {
+            padding: 6px 10px;
+            font-size: 0.7rem;
         }
     }
     /* Typography Adjustments */
