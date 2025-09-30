@@ -754,20 +754,14 @@
                                 <span class="lang-en">Baby's Age</span>
                                 <span class="lang-ru hidden">Возраст ребёнка</span>
                             </label>
-                            <select class="premium-select" required>
-                                <option value="">
-                                    <span class="lang-en">Select age range</span>
-                                    <span class="lang-ru hidden">Выберите возраст</span>
-                                </option>
-                                <option value="expecting">
-                                    <span class="lang-en">Expecting</span>
-                                    <span class="lang-ru hidden">Беременность</span>
-                                </option>
-                                <option value="0-3">0-3 months</option>
-                                <option value="3-6">3-6 months</option>
-                                <option value="6-12">6-12 months</option>
-                                <option value="1-2">1-2 years</option>
-                                <option value="2-3">2-3 years</option>
+                            <select class="premium-select" id="ageRangeSelect" required>
+                                <option value="" data-en="Select age range" data-ru="Выберите возраст"></option>
+                                <option value="expecting" data-en="Expecting" data-ru="Беременность"></option>
+                                <option value="0-3" data-en="0-3 months" data-ru="0-3 месяца"></option>
+                                <option value="3-6" data-en="3-6 months" data-ru="3-6 месяцев"></option>
+                                <option value="6-12" data-en="6-12 months" data-ru="6-12 месяцев"></option>
+                                <option value="1-2" data-en="1-2 years" data-ru="1-2 года"></option>
+                                <option value="2-3" data-en="2-3 years" data-ru="2-3 года"></option>
                             </select>
                         </div>
 
@@ -776,7 +770,7 @@
                                 <span class="lang-en">Your Question</span>
                                 <span class="lang-ru hidden">Ваш вопрос</span>
                             </label>
-                            <textarea class="premium-textarea" rows="4" required placeholder="Ask anything about sleep, feeding, development, or self-care..."></textarea>
+                            <textarea class="premium-textarea" id="questionTextarea" rows="4" required data-placeholder-en="Ask anything about sleep, feeding, development, or self-care..." data-placeholder-ru="Расскажите о вашей проблеме: сон, кормление, развитие или забота о себе..."></textarea>
                         </div>
 
                         <div class="form-field checkbox-field">

@@ -87,7 +87,46 @@ class WellMamaPremium {
             }
         });
 
+        // Update form elements with proper language
+        this.updateFormLanguage(lang);
+
         document.documentElement.lang = lang;
+    }
+
+    // Update form elements to show text in selected language only
+    updateFormLanguage(lang) {
+        // Update select dropdown options
+        const ageSelect = document.getElementById('ageRangeSelect');
+        if (ageSelect) {
+            const options = ageSelect.querySelectorAll('option');
+            options.forEach(option => {
+                const text = lang === 'en' ? option.getAttribute('data-en') : option.getAttribute('data-ru');
+                if (text) {
+                    option.textContent = text;
+                }
+            });
+        }
+
+        // Update textarea placeholder
+        const questionTextarea = document.getElementById('questionTextarea');
+        if (questionTextarea) {
+            const placeholder = lang === 'en'
+                ? questionTextarea.getAttribute('data-placeholder-en')
+                : questionTextarea.getAttribute('data-placeholder-ru');
+            if (placeholder) {
+                questionTextarea.setAttribute('placeholder', placeholder);
+            }
+        }
+
+        // Update any other form elements with data attributes
+        document.querySelectorAll('[data-placeholder-en]').forEach(el => {
+            const placeholder = lang === 'en'
+                ? el.getAttribute('data-placeholder-en')
+                : el.getAttribute('data-placeholder-ru');
+            if (placeholder && (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA')) {
+                el.setAttribute('placeholder', placeholder);
+            }
+        });
     }
 
     // Premium Animations
