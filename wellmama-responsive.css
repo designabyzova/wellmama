@@ -171,11 +171,149 @@
 }
 
 /* ================================================
+   MOBILE NAVIGATION HEADER STYLES
+   ================================================ */
+
+/* Hide desktop nav actions on mobile */
+@media only screen and (max-width: 767px) {
+    .nav-actions {
+        display: none !important;
+    }
+
+    /* Show mobile nav actions */
+    .mobile-nav-actions {
+        display: flex !important;
+        align-items: center;
+        gap: 0.75rem;
+    }
+}
+
+/* Desktop: Hide mobile nav actions */
+@media only screen and (min-width: 768px) {
+    .mobile-nav-actions {
+        display: none !important;
+    }
+}
+
+/* Mobile Language Switcher */
+.language-switcher-mobile {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    background: rgba(255, 255, 255, 0.9);
+    border: 1px solid var(--medium-gray);
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: var(--dark-gray);
+    cursor: pointer;
+    transition: all 0.2s ease;
+    white-space: nowrap;
+}
+
+.language-switcher-mobile:hover {
+    border-color: var(--primary);
+    background: var(--white);
+}
+
+.language-switcher-mobile .lang-indicator {
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+.language-switcher-mobile .lang-indicator.active {
+    color: var(--primary);
+    font-weight: 700;
+}
+
+.language-switcher-mobile .lang-divider {
+    opacity: 0.4;
+    margin: 0 2px;
+}
+
+/* Mobile CTA Button */
+.premium-cta-mobile {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: var(--gradient-primary);
+    color: var(--white);
+    padding: 8px 16px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: 0.875rem;
+    font-weight: 600;
+    transition: all 0.2s ease;
+    white-space: nowrap;
+}
+
+.premium-cta-mobile:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(147, 51, 234, 0.3);
+}
+
+.premium-cta-mobile .cta-arrow {
+    font-size: 1.1em;
+    transition: transform 0.2s ease;
+}
+
+.premium-cta-mobile:hover .cta-arrow {
+    transform: translateX(2px);
+}
+
+/* Mobile Navigation Actions Container */
+.mobile-nav-actions {
+    display: none;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+/* Adjust hamburger menu to work with other buttons */
+.hamburger-menu {
+    margin-left: 0.5rem;
+}
+
+/* ================================================
    MOBILE BREAKPOINTS
    ================================================ */
 
 /* Small Mobile: 320px - 479px */
 @media only screen and (max-width: 479px) {
+    /* Adjust mobile header for very small screens */
+    .mobile-nav-actions {
+        gap: 0.5rem;
+    }
+
+    .language-switcher-mobile {
+        padding: 5px 10px;
+        font-size: 0.75rem;
+    }
+
+    .premium-cta-mobile {
+        padding: 6px 12px;
+        font-size: 0.75rem;
+    }
+
+    .premium-cta-mobile .lang-ru {
+        display: none !important; /* Hide Russian text to save space */
+    }
+
+    .premium-cta-mobile .lang-en {
+        display: inline !important;
+    }
+
+    /* Make buttons more compact on very small screens */
+    @media only screen and (max-width: 374px) {
+        .premium-cta-mobile span:not(.cta-arrow) {
+            display: none;
+        }
+
+        .premium-cta-mobile::before {
+            content: "Ask";
+            display: inline;
+        }
+    }
     /* Typography Adjustments */
     html {
         font-size: 14px;
@@ -221,10 +359,6 @@
     }
 
     .main-navigation {
-        display: none !important;
-    }
-
-    .nav-actions {
         display: none !important;
     }
 
@@ -412,10 +546,6 @@
 
     /* Navigation */
     .main-navigation {
-        display: none !important;
-    }
-
-    .nav-actions {
         display: none !important;
     }
 
