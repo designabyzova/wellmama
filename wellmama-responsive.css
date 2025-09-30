@@ -151,6 +151,25 @@
     transform: rotate(-45deg) translate(7px, -6px);
 }
 
+/* Mobile Navigation Drawer */
+.mobile-nav {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 80%;
+    max-width: 320px;
+    height: 100vh;
+    background: var(--white);
+    box-shadow: var(--shadow-xl);
+    transition: right 0.3s ease;
+    z-index: 999;
+    overflow-y: auto;
+}
+
+.mobile-nav.active {
+    right: 0;
+}
+
 /* ================================================
    MOBILE BREAKPOINTS
    ================================================ */
@@ -493,6 +512,44 @@
     }
 }
 
+/* Desktop: 1024px and up - Preserve original design */
+@media only screen and (min-width: 1024px) {
+    /* Desktop navigation remains unchanged */
+    .hamburger-menu {
+        display: none !important;
+    }
+
+    .mobile-menu,
+    .mobile-menu-overlay,
+    .mobile-nav {
+        display: none !important;
+    }
+
+    /* Original desktop grid layouts */
+    .journey-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .resources-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .stats-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .footer-content {
+        grid-template-columns: 2fr 1fr 1fr 1fr;
+    }
+}
+
+/* Large Desktop: 1440px and up */
+@media only screen and (min-width: 1440px) {
+    .resources-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
 /* ================================================
    MOBILE-SPECIFIC UTILITIES
    ================================================ */
@@ -636,12 +693,16 @@
     .premium-nav,
     .fab,
     .mobile-menu,
-    .hamburger-menu {
+    .hamburger-menu,
+    .mobile-nav,
+    .mobile-menu-overlay {
         display: none !important;
     }
 
     body {
         font-size: 12pt;
+        color: black;
+        background: white;
     }
 
     a {
