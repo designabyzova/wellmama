@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=Inter:wght@300;400;500;600;700&family=DM+Serif+Display&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="wellmama-premium.css">
+    <link rel="stylesheet" href="wellmama-responsive.css">
 </head>
 <body>
     <!-- Premium Announcement Bar -->
@@ -20,6 +20,54 @@
             <span class="announcement-badge">NEW</span>
             <p class="lang-en">Join 2,500+ mothers in our exclusive community • Expert response in under 6 hours</p>
             <p class="lang-ru hidden">Присоединяйтесь к сообществу из более 2,500 мам • Ответ эксперта в течение 6 часов</p>
+        </div>
+    </div>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-header">
+            <div class="mobile-logo">
+                <span class="logo-main">WellMama</span>
+            </div>
+            <button class="mobile-menu-close" onclick="closeMobileMenu()" aria-label="Close menu">
+                ✕
+            </button>
+        </div>
+        <nav class="mobile-menu-nav">
+            <a href="#home" onclick="closeMobileMenu()">
+                <span class="lang-en">Home</span>
+                <span class="lang-ru hidden">Главная</span>
+            </a>
+            <a href="#expertise" onclick="closeMobileMenu()">
+                <span class="lang-en">Expertise</span>
+                <span class="lang-ru hidden">Наши специалисты</span>
+            </a>
+            <a href="#resources" onclick="closeMobileMenu()">
+                <span class="lang-en">Resources</span>
+                <span class="lang-ru hidden">Ресурсы</span>
+            </a>
+            <a href="#community" onclick="closeMobileMenu()">
+                <span class="lang-en">Community</span>
+                <span class="lang-ru hidden">Сообщество</span>
+            </a>
+            <a href="#consultation" onclick="closeMobileMenu()">
+                <span class="lang-en">Consultation</span>
+                <span class="lang-ru hidden">Задать вопрос</span>
+            </a>
+        </nav>
+        <div class="mobile-menu-actions">
+            <button class="language-switcher" onclick="toggleLanguage()">
+                <span class="lang-indicator active">EN</span>
+                <span class="lang-divider">/</span>
+                <span class="lang-indicator">RU</span>
+            </button>
+            <a href="#consultation" class="mobile-menu-cta" onclick="closeMobileMenu()">
+                <span class="lang-en">Ask a Question →</span>
+                <span class="lang-ru hidden">Задать вопрос →</span>
+            </a>
         </div>
     </div>
 
@@ -80,7 +128,9 @@
                         <span class="lang-ru hidden">Задать вопрос</span>
                         <span class="cta-arrow">→</span>
                     </a>
-                    <button class="menu-trigger" onclick="toggleMenu()">
+                    <!-- Hamburger Menu for Mobile -->
+                    <button class="hamburger-menu" id="hamburgerMenu" onclick="toggleMobileMenu()" aria-label="Menu">
+                        <span></span>
                         <span></span>
                         <span></span>
                     </button>
@@ -849,5 +899,6 @@
     </button>
 
     <script src="wellmama-premium.js"></script>
+    <script src="wellmama-mobile.js"></script>
 </body>
 </html>
